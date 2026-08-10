@@ -5,9 +5,9 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { SplitText } from "gsap/SplitText"
 
-export function initIntro() {
-  gsap.registerPlugin(ScrollTrigger, SplitText)
+gsap.registerPlugin(ScrollTrigger, SplitText)
 
+export function initIntro() {
   function isMobile() {
     return window.innerWidth <= 767
   }

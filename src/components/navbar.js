@@ -1,13 +1,12 @@
 /*--------------------
 EA Swim+ Navbar JS
 --------------------*/
-
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-export function initNavbar() {
-  gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
+export function initNavbar() {
   const nav = document.querySelector("[data-nav-component]")
   const navBrand = document.querySelector("[data-nav-brand]")
 

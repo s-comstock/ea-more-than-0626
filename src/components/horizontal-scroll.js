@@ -1,13 +1,12 @@
 /*--------------------
 Horizontal Scroll JS
 --------------------*/
-
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 
-export function initHorizontalScroll() {
-  gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger)
 
+export function initHorizontalScroll() {
   const mm = gsap.matchMedia()
 
   mm.add(
