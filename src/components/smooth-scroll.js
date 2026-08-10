@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export function initSmoothScroll() {
   const lenis = new Lenis({
-    lerp: 0.1, //Adjust the lerp value to control the smoothness of the scroll
+    lerp: 0.06, //Adjust the lerp value to control the smoothness of the scroll
     respectReducedMotion: true // Respect user's reduced motion preference
   })
 
