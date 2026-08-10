@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "build": "esbuild src/index.js --bundle --minify --outfile=dist/index.js --format=iife",
+    "serve": "serve dist -l 3000",
+    "stop": "kill -9 $(lsof -ti:3000)",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
