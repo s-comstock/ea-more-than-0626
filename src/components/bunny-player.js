@@ -74,8 +74,8 @@ export function initBunnyPlayer() {
     if (typeof video.disableRemotePlayback !== "undefined") video.disableRemotePlayback = true
     if (autoplay) video.autoplay = false
 
-    var isSafariNative = !!video.canPlayType("application/vnd.apple.mpegurl")
-    var canUseHlsJs = !!(Hls && Hls.isSupported()) && !isSafariNative
+    var canUseHlsJs = !!(window.Hls && Hls.isSupported())
+    var isSafariNative = !canUseHlsJs && !!video.canPlayType("application/vnd.apple.mpegurl")
 
     // Minimal ratio fetch when requested (and not already handled by lazy meta)
     if (updateSize === "true" && !isLazyMeta) {
