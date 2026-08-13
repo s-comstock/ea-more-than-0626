@@ -8,6 +8,7 @@ import { initBunnyLightboxPlayer } from "./components/bunny-lightbox.js"
 import { initSmoothScroll } from "./components/smooth-scroll.js"
 import { initIntro } from "./components/intro.js"
 import { initHorizontalScroll } from "./components/horizontal-scroll.js"
+import { initAccordion } from "./components/accordion.js"
 
 window.addEventListener("load", () => {
   initNavbar()
@@ -17,4 +18,5 @@ window.addEventListener("load", () => {
   initIntro()
   initSmoothScroll()
   initHorizontalScroll()
+  initAccordion()
 })
