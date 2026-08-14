@@ -156,11 +156,6 @@ export function initBunnyPlayerBackground() {
       readyIfIdle(player, pendingPlay)
     })
     video.addEventListener("ended", function () {
-      if (autoplay && canUseHlsJs) {
-        video.currentTime = 0
-        safePlay(video)
-        return
-      }
       pendingPlay = false
       setStatus("paused")
       setActivated(false)
