@@ -22,5 +22,5 @@ window.addEventListener("load", () => {
   initHorizontalScroll()
   initAccordion()
   initSplideSwiper()
-  initStickyStepsBasic
+  initStickyStepsBasic()
 })
