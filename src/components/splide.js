@@ -3,7 +3,7 @@ Splide Slider JS
 --------------------*/
 import Splide from "@splidejs/splide"
 
-export function splideSwiperInit() {
+export function initSplideSwiper() {
   document.querySelectorAll(".splide").forEach(el => {
     /* initialize Splide slider */
     const splide = new Splide(el, {

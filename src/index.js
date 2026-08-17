@@ -9,7 +9,8 @@ import { initSmoothScroll } from "./components/smooth-scroll.js"
 import { initIntro } from "./components/intro.js"
 import { initHorizontalScroll } from "./components/horizontal-scroll.js"
 import { initAccordion } from "./components/accordion.js"
-import { splideSwiperInit } from "./components/splide.js"
+import { initSplideSwiper } from "./components/splide.js"
+import { initStickyStepsBasic } from "./components/sticky-steps.js"
 
 window.addEventListener("load", () => {
   initNavbar()
@@ -20,5 +21,6 @@ window.addEventListener("load", () => {
   initSmoothScroll()
   initHorizontalScroll()
   initAccordion()
-  splideSwiperInit()
+  initSplideSwiper()
+  initStickyStepsBasic
 })
