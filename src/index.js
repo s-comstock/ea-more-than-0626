@@ -11,6 +11,7 @@ import { initHorizontalScroll } from "./components/horizontal-scroll.js"
 import { initAccordion } from "./components/accordion.js"
 import { initSplideSwiper } from "./components/splide.js"
 import { initStickyStepsBasic } from "./components/sticky-steps.js"
+import { initMediaSetup } from "./components/media-setup.js"
 
 window.addEventListener("load", () => {
   initNavbar()
@@ -23,4 +24,5 @@ window.addEventListener("load", () => {
   initAccordion()
   initSplideSwiper()
   initStickyStepsBasic()
+  initMediaSetup()
 })

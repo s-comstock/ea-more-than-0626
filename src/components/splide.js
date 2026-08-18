@@ -13,6 +13,7 @@ export function initSplideSwiper() {
       autowidth: true,
       gap: "1.25rem",
       perPage: 1,
+      perMove: 1,
       trimSpace: true,
       pagination: false,
       arrows: true,

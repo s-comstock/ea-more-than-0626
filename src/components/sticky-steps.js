@@ -29,7 +29,7 @@ export function initStickyStepsBasic() {
 
       ScrollTrigger.create({
         trigger: anchor,
-        start: "center center",
+        start: "center 70%",
         onEnter: () => setActiveStep(index),
         onEnterBack: () => setActiveStep(index)
       })
